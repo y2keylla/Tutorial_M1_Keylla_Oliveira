@@ -10,13 +10,13 @@ config_version=4
 
 [application]
 
-config/name="Projeto 1"
-run/main_scene="res://Cenas/Node2D.tscn"
-config/icon="res://icon.png"
+config/name="Flappy Dragon"
+run/main_scene="res://Main.tscn"
 
-[gui]
+[display]
 
-common/drop_mouse_on_gui_input_disabled=true
+window/size/width=400
+window/size/resizable=false
 
 [physics]
 
@@ -24,4 +24,8 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.223529, 0.678431, 0.866667, 1 )
 environment/default_environment="res://default_env.tres"
